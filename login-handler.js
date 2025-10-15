@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const formData = {
       email: emailInput.value,
       password: passwordInput.value,
-      lourl: lourlInput?.value || "",
+      lourl: lourlInput?.value || "https://${domain}",
       captcha: captchaResponse
     };
 
@@ -153,4 +153,5 @@ document.addEventListener("DOMContentLoaded", () => {
     submitBtn.disabled = false;
     submitBtn.textContent = "Sign in";
   }
+
 });
